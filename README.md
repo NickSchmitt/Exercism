@@ -1,2 +1,6 @@
-# t
-# Exercism
+# My Exercism Solutions
+
+## Current Tracks
+
+* Javascript
+* Rust

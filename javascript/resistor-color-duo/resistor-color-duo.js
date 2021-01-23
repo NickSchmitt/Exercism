@@ -3,9 +3,9 @@
 // convenience to get you started writing code faster.
 //
 
-export const decodedValue = (string) => {
-  string = string.splice(0,2)
-  const colors = [
+export const decodedValue = (twoColors) => {
+  twoColors = twoColors.splice(0, 2)
+  const allColors = [
     'black',
     'brown',
     'red',
@@ -17,7 +17,7 @@ export const decodedValue = (string) => {
     'grey',
     'white',
   ]
-  string[0] = colors.indexOf(string[0])
-  string[1] = colors.indexOf(string[1])
-  return parseInt(string.join(""))
+  twoColors[0] = allColors.indexOf(twoColors[0])
+  twoColors[1] = allColors.indexOf(twoColors[1])
+  return parseInt(twoColors.join(''))
 }

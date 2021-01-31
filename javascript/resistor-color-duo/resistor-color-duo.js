@@ -4,7 +4,6 @@
 //
 
 export const decodedValue = (twoColors) => {
-  twoColors = twoColors.splice(0, 2)
   const allColors = [
     'black',
     'brown',
@@ -17,7 +16,7 @@ export const decodedValue = (twoColors) => {
     'grey',
     'white',
   ]
-  twoColors[0] = allColors.indexOf(twoColors[0])
-  twoColors[1] = allColors.indexOf(twoColors[1])
-  return parseInt(twoColors.join(''))
+  return parseInt(twoColors.map((x) => allColors.indexOf(x))
+          .splice(0,2)
+          .join(''))
 }

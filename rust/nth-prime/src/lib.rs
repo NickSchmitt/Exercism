@@ -33,17 +33,3 @@ pub fn prime_sieve(target_prime: usize, max_number_to_check: usize) -> usize {
     println!("running larger prime sieve");
     prime_sieve(target_prime, max_number_to_check * 2)
 }
-
-
-
-
-
-// fn is_prime(n: u32) -> bool {
-//     for i in 2..n - 1 {
-//         if n % i == 0 {
-//             return false;
-//         }
-//     }
-//     true
-// }
-

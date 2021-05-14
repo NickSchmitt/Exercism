@@ -1,0 +1,5 @@
+{
+  "dependencies": {
+    "@types/babel__core": "^7.1.14"
+  }
+}

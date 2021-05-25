@@ -1,6 +1,6 @@
 const isCaps = (m) => /[A-Z]/.test(m) && !/[a-z]/.test(m)
-const saysNothing = (m) => !(/([^\s])/.test(m) && m.length > 0)
-const isQuestion = (m) => /\?$/.test(m.trimEnd())
+const saysNothing = (m) => m.trim() === ''
+const isQuestion = (m) => m.trim().endsWith('?')
 
 export const hey = (m) => {
     return saysNothing(m)
